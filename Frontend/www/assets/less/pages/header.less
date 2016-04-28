@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 8%;
+  opacity: 0.9;
+
+  .logo {
+    height: 70px;
+    z-index: 20;
+    float: left;
+    margin-top: 1px;
+    margin-right: -20px;
+    cursor: pointer;
+  }
+
+  .navbar {
+    background-color: darken(@color-detail, 5%);
+    padding: 16px;
+    width: 100%;
+    height: 90px;
+    opacity: 0.85;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  @media (max-width: 800px) {
+    .title {
+      font-size: @header-size*0.25;
+      margin: @header-size/10 0 @header-size/10 @header-size/2;
+    }
+
+    .navbar {
+      text-align: center;
+    }
+  }
+
+}
+

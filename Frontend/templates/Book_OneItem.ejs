@@ -1,0 +1,16 @@
+<div class="col-lg-4 book-holder">
+    <li class="book-space">
+        <% if(book.icon_present) { %>
+        <img class="img-rounded book-icon" src="<%= book.icon %>"
+             style="max-height: 300px; margin: 20px;"/>
+        <% } else { %>
+        <img class="book-icon" src="assets/images/book.jpg"
+             style="max-height: 300px; margin: 20px;"/>
+        <% } %>
+        <h2><%= book.author %>:<br> «<%= book.title %>»</h2>
+        <p>Статус: Вільна</p>
+        <p><a class="btn btn-default" href="<%= book.link %>"
+              role="button">НАПИСАТИ ВЛАСНИКУ</a></p>
+        </a>
+    </li>
+</div>

@@ -1,0 +1,124 @@
+.main {
+  .about-img {
+    margin-bottom: 30px;
+    width: 100%
+
+  }
+  .item {
+    img {
+      margin-top: -100px;
+    }
+  }
+
+  .top {
+    display: inline;
+    img {
+      height: 200px;
+    }
+  }
+
+  #myCarousel {
+    margin-top: auto;
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: 50px;
+      text-shadow: 5px 5px 5px white, 0 0 1em yellow;
+      color: lighten(@color-detail, 15%);
+      font-weight: 400;
+    }
+
+    p {
+
+      font-size: 20px;
+      color: lighten(@mainColor, 85%);
+      text-shadow: 1px 1px 1px @color-detail, 0 0 1em yellow;
+      font-weight: 600;
+    }
+
+    .btn {
+      color: lighten(@color-detail, 5%);
+      font-weight: bold;
+      background-color: lighten(@mainColor, 50%);
+      border: 2px solid darken(@color-detail, 5%);
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: lighten(@mainColor, 5%);
+    }
+  }
+
+  .book-holder {
+    padding:0 30px;
+    text-align: center;
+
+    .book-icon{
+      height:300px;
+    }
+    h2 {
+      color: @color-dark;
+      font-weight: bold;
+    }
+    p {
+      color: darken(@mainColor2, 25%);
+
+      .btn {
+        border-radius: 30px;
+        border: 2px solid @color-dark;
+        font-weight: bold;
+        background-color: lighten(@color-light, 15%);
+        color: darken(@color-dark, 20%);
+      }
+
+      .btn:hover {
+        background-color: darken(@color-light, 10%);
+      }
+    }
+
+    .label-new {
+      display: inline;
+      padding: 3%;
+      font-size: 90%;
+      vertical-align: baseline;
+      -webkit-margin-before: -3px;
+      position: absolute;
+      border-radius: 30px;
+      right: 120px;
+      top: 0;
+      background-color: lighten(@mainColor, 25%);
+    }
+  }
+
+  .carousel-inner > .item > img {
+    width: 100%;
+  }
+
+  h2 {
+    color: darken(@mainColor2, 13%);
+    font-weight: 300;
+  }
+  .text-muted {
+    color: lighten(@mainColor, 13%);
+  }
+  .lead {
+    text-align: justify;
+
+    .glyphicon {
+      color: @color-detail;
+    }
+  }
+
+  .featurette-image {
+    height: 420px;
+  }
+
+  .featurette-heading {
+    text-align: center;
+  }
+
+  .narrow {
+    padding: 0px 10%;
+  }
+
+}

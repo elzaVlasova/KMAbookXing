@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+
+    <title>KMAbookXing</title>
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- LESS основний файл -->
+    <link rel="stylesheet" tyle="text/css" href="assets/less/component.css"/>
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less"/>
+    <!-- LESS JavaScript компілятор -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+    <meta name="keywords" content="jquery tutorial,image gallery, jquery delegate"/>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+    <!--font-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
+
+    <!--vk-->
+    <script src="//vk.com/js/api/openapi.js" type="text/javascript"></script>
+
+
+    <script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+
+<div class="main-container ">
+    <div class="header">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div id="navbar" class="navbar-collapse colapse">
+                    <ul class="nav navbar-nav">
+                        <li></li>
+                        <img class="logo" src="assets/images/Center2_9.png"></li>
+                        <li><a href="/about.html"><span class="glyphicon glyphicon-pencil"></span>
+                            ПРО НАС</a></li>
+                        <li><a href="/catalog.html"><span class="glyphicon glyphicon-book"></span>
+                            КАТАЛОГ</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> УВІЙТИ</a></li>
+                        <div id="login_button"></div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+<div class="main-container">
+
+
+    <div class="gallery">
+        <!--/ Codrops top bar -->
+
+
+        <div class="adding-form">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                        <div class="form_hover">
+                            <header class="clearfix">
+                                <h1 style="text-align: center;">Наша таємнича галерея</h1>
+
+                                <h3 style="text-align: center;"> Обирай зображення, що тобі сподобалося. <br>Клікай на
+                                    нього і ретельно
+                                    вивчай опис книжки, захованої під ним. <br> Знаходь книгу, що чекає саме на тебе.
+                                </h3>
+                            </header>
+                            <div class="header">
+                                <div class="blur"></div>
+                                <div class="header-text">
+                                    <div class="panel panel-default">
+
+                                        <div class="panel-heading">
+                                            <button type="button" class="btn btn-default add"><span
+                                                    class="glyphicon glyphicon-plus"></span>
+                                            </button>
+                                        </div>
+
+                                        <div class="panel-body">
+
+                                            <div class="form-inline">
+                                                <div class="form-group col-sm-6 col-sm-6">
+                                                    <input type="text" class="form-control  input-lg" id="title"
+                                                           placeholder="Назва">
+                                                </div>
+                                                <div class="form-group col-sm-6 col-sm-6">
+                                                    <input type="text" class="form-control  input-lg" id="author"
+                                                           placeholder="Автор">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-sm-12 col-sm-12">
+                                                <input type="text" class="form-control input-lg" id="link"
+                                                       placeholder="Лінк на вашу сторінку в соцмережах">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <ul id="og-grid" class="og-grid">
+                <li class="book-space" style=" wigth:350px; height: 350px;">
+                    <a href="http://google.com" data-largesrc="assets/images/books/EatPray.png"
+                       data-title="Їсти Молитися Кохати"
+                       data-description="Елізабет Гілберт">
+                        <img class="book-icon" src="assets/images/books/EatPray.png" alt="img01"
+                             style="max-height: 300px; margin: 20px;"/>
+                    </a>
+                </li>
+                <li class="book-space" style=" wigth:350px; height: 350px;">
+                    <a href="http://google.com" data-largesrc="assets/images/books/Chubai.png"
+                       data-title="П'ятикнижжя"
+                       data-description="Грицько Чубай">
+                        <img src="assets/images/books/Chubai.png" alt="img02" style="max-height: 300px; margin: 25px;"/>
+                    </a>
+                </li>
+                <li class="book-space" style=" wigth:350px; height: 350px;">
+                    <a href="http://google.com" data-largesrc="assets/images/books/Pollianna.png"
+                       data-title="Поліанна"
+                       data-description="Елеанор Портер">
+                        <img src="assets/images/books/Pollianna.png" alt="img02"
+                             style="max-height: 300px; margin: 25px;"/>
+                    </a>
+                </li>
+
+                <li class="book-space" style=" wigth:350px; height: 350px;">
+                    <a href="http://google.com" data-largesrc="assets/images/books/Higina.jpg"
+                       data-title="Хіжина дяді Тома"
+                       data-description="Гаріет Бічер-Стоу">
+                        <img src="assets/images/books/Higina.jpg" alt="img02" style="max-height: 300px; margin: 25px;"/>
+                    </a>
+                </li>
+                <li class="book-space" style=" wigth:350px; height: 350px;">
+                    <a href="http://google.com" data-largesrc="assets/images/books/ChildrenArt.png"
+                       data-title="Як розмовляти з дітьми про мистецтво XX століття"
+                       data-description="Француаза Барб-Гааль">
+                        <img src="assets/images/books/ChildrenArt.png" alt="img02"
+                             style="max-height: 300px; margin: 25px;"/>
+                    </a>
+                </li>
+                <li class="book-space" style=" wigth:350px; height: 350px;">
+                    <a href="http://google.com" data-largesrc="assets/images/books/Izdrik.png"
+                       data-title="Ab out"
+                       data-description="Іздрик">
+                        <img src="assets/images/books/Izdrik.png" alt="img02" style="max-height: 300px; margin: 20px;"/>
+                    </a>
+                </li>
+                <li class="book-space" style=" wigth:350px; height: 350px;">
+                    <a href="http://google.com" data-largesrc="assets/images/books/TCh.jpg"
+                       data-title="Теорія чисел"
+                       data-description="Герман Вейль">
+                        <img src="assets/images/books/TCh.jpg" alt="img02" style="max-height: 300px; margin: 25px;"/>
+                    </a>
+                </li>
+                <li class="book-space" style=" wigth:350px; height: 350px;">
+                    <a href="http://google.com" data-largesrc="assets/images/books/Mahno.png"
+                       data-title="Дім у Бейтінг Голов"
+                       data-description="Василь Махно">
+                        <img src="assets/images/books/Mahno.png" alt="img02" style="max-height: 300px; margin: 25px;"/>
+                    </a>
+                </li>
+
+                <li class="book-space" style=" wigth:350px; height: 350px;">
+                    <a href="http://google.com" data-largesrc="assets/images/books/Kalendar_lubovi.png"
+                       data-title="Календар Любові"
+                       data-description="Іздрик">
+                        <img src="assets/images/books/Kalendar_lubovi.png" alt="img02"
+                             style="max-height: 300px; margin: 25px;"/>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="main-container ">
+        <div class="footer"><p class="pull-right"><a href="#">Back to top</a></p>
+
+            <p>© 2016 KMAbookXing є авторським проектом студенток НаУКМА Вероніки Власової та Анастасії Головенко. Всі
+                права
+                захищені.</p></div>
+    </div>
+</div>
+</div><!-- /container -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/grid.js"></script>
+<script>
+    $(function () {
+        Grid.init();
+    });
+</script>
+</body>
+</html>
